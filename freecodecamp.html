@@ -1,0 +1,110 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/journal/bootstrap.min.css">
+
+<style>
+body{
+  background-color:#000;
+  padding:0px 50px;
+  font-family:Jokerman;
+} 
+
+h1{
+	font-family:Gill Sans;
+	text-align:center;
+	color:yellow;
+	font-size:40px;
+	font-weight:bold;
+    padding:25px;
+    text-transform:uppercase;
+}
+
+
+#quote{
+	font-size: 50px;
+	padding:20px 30px 20px 30px;
+	text-transform: capitalize;
+	font-style: italic;
+	font-weight:bold;
+	margin:10px 30px 10px 30px;
+    color:yellow;
+	text-align:center;	
+}
+
+.btt{
+	text-align:center;
+}
+
+
+
+#btn {
+	border-radius:5px;
+	border:1px solid yellow;
+	font-size: 25px;
+	padding:10px 50px;
+	color:#000;
+	font-weight:bold;
+	background-color:yellow;
+	margin-top: 90px;
+	font-family:Gill Sans;
+	text-align:center;
+     text-decoration: none;
+     transition: all 2.5s ease;
+}
+#btn:hover{
+     background-color:#E04C11;
+     cursor:default;
+}
+
+</style>
+
+</head>
+<body>
+<div class='top'>
+	
+<h1>Random Quotezzz</h1></div>
+
+
+<hr>
+
+<div>
+<p id='quote'>Here are some quotes i got from    <a href='http://coolfunnyquotes.com '><span>Cool Quotes</a>  </span> i hope you like it.
+</p>
+</div>
+
+<div class='btt'>
+<a id="btn">Get Quotes</a>
+</div>
+
+</body>
+
+<script>
+var names = ["A best friend is like a four leaf clover, hard to find, lucky to have.",
+"Some people are like clouds. When they go away, it's a brighter day.",
+"When the past comes knocking, don't answer. It has nothing new to tell you.",
+"I don't need a hair stylist, my pillow gives me a new hairstyle every morning.",
+"When you fall, I will be there to catch you - With love, the floor.",
+"If people are talking behind your back, be happy that you are the one in front.",
+"Life doesn't have any hands, but it can sure give you a slap sometimes.",
+"Don't worry if plan A fails, there are 25 more letters in the alphabet.",
+"Life doesn't have any hands, but it can sure give you a slap sometimes.",
+"All my life I thought air was free, until I bought a bag of chips.",
+"Doing nothing is hard, you never know when you're done.","Be yourself; everyone else is already taken.","Do you believe in love at first sight, or should I walk by again?","A mind is like a parachute. It doesn't work if it is not open.","I'm not lazy, I'm just very relaxed.","Who says nothing is impossible? I've been doing nothing for years.","People say you can't live without love, but I think oxygen is more important.","The great pleasure in life is doing what people say you cannot do.","It's not important to win, it's important to make the other guy lose.","I did not trip and fall. I attacked the floor and I believe I am winning.","Everybody wants to go to heaven; but nobody wants to die.","The future is shaped by your dreams, so stop wasting time and go to sleep!","I'm old enough to know better, but young enough to do it anyway.","The road to success is always under construction.","The best revenge is massive success.","Never take life seriously. Nobody gets out alive anyway."];
+
+
+
+document.getElementById("btn").addEventListener("click", myQuotes);
+
+function myQuotes() {
+	var i = Math.floor((Math.random() * names.length));
+    document.getElementById("quote").innerHTML = names[i];
+
+
+}
+
+</script>
+
+
+
+</html>
+
